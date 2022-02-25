@@ -9,11 +9,12 @@ uses pcap_next(). You can also inject packets, the wrapper will call pcap_inject
 NOTE: It's very possible that you will need root or administrator privileges
 to sniff an interface. So, beware.
 
-Building
-========
-On Ubuntu 20.04:
-sudo apt install build-essential libpcap-dev php-dev
-make
+Building for PHP7.4 on Ubuntu 20.04
+===================================
+1. Clone repo and cd into it
+2. Install pre-requisite packages `apt install git build-essential libpcap-dev php-dev swig4.0`
+3. Run make
+4. Module .so and corresponsing .php file is inside ./build
 
 CI
 ==
