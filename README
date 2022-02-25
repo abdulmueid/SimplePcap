@@ -9,6 +9,12 @@ uses pcap_next(). You can also inject packets, the wrapper will call pcap_inject
 NOTE: It's very possible that you will need root or administrator privileges
 to sniff an interface. So, beware.
 
+Building
+========
+On Ubuntu 20.04:
+sudo apt install build-essential libpcap-dev php-dev
+make
+
 CI
 ==
 You can get a build for linux x86_64 at:

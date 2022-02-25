@@ -1,5 +1,5 @@
-PHPINC += /usr/php-5.3/include/php
-SWIG += /export/users/marcelog/swig/bin/swig
+PHPINC += /usr/include/php/20190902
+SWIG += /usr/bin/swig4.0
 OUTPUTDIR += ./build
 SRCDIR += ./src
 INCDIR += ./include
@@ -18,7 +18,7 @@ CPPFLAGS = \
 	-I${PHPINC}/TSRM \
 	-I${PHPINC}
 LD = ld
-LIBS = -lpcap -lstdc++
+LIBS = -lpcap
 LDFLAGS += 
 
 all: prepare ${OUTPUTDIR}/${NAME}.so
